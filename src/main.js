@@ -7,23 +7,16 @@ import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import Vant from 'vant'
 import 'vant/lib/index.css'
-import JSEncrypt from 'jsencrypt'
+import JsEncrypt from 'jsencrypt'
 import Axios from 'axios'
 
 Vue.config.productionTip = false
 
 Vue.prototype.$axios = Axios
-Vue.prototype.$jsenc = JSEncrypt
+Vue.prototype.$jsencrypt = JsEncrypt
 Vue.use(MintUI)
 Vue.use(Vant)
 
-Vue.prototype.$getssCode = function(password,publickey){
-  let encrypt = new JSEncrypt()
-  console.log(encrypt);
-  encrypt.setPublicKey(publickey)
-  let data = encrypt.encrypt(password)
-  return data
-}
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

@@ -66,7 +66,6 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 0px;
 }
@@ -84,6 +83,7 @@ export default {
   height:40px; 
   line-height:40px; 
   font-size:14px;
+  color:#2c3e50;
   cursor:pointer; 
   background-color:#ffffff; 
   text-align:center;  

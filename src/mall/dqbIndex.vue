@@ -1,10 +1,6 @@
 <template>
 <div>
-<mt-checklist
-  title="复选框列表"
-  v-model="value"
-  :options="['选项A', '选项B', '选项C']">
-</mt-checklist>
+
 </div>
 </template>
 <script>
