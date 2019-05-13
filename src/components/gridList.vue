@@ -1,7 +1,7 @@
 <template>
 <div class="li_index">
     <ul>
-        <template v-for="iconbtn in iconbtns">
+        <template v-for="iconbtn in iconBtns">
             <li class="line_li" @click="goto(iconbtn.funC)">
                 <img :src="iconbtn.src" class="li_Img"/>
                 <div class="li_desc">{{iconbtn.name}}</div>
@@ -14,12 +14,41 @@
 
 export default {
   props:{
-    iconbtns:Object
+    iconBtns:Array
   },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
 
+    }
+  },
+  methods:{
+    goto(methodsWords) {
+      this[methodsWords]()
+    },
+    dtjx(){
+        console.log('dtjx')
+    },
+    wdlc(){
+        console.log('wdlc')
+    },
+    cpcx(){
+        console.log('cpcx')
+    },
+    wdgz(){
+        console.log('wdgz')
+    },
+    sypz(){
+        console.log('sypz')
+    },
+    yhlc(){
+        console.log('yhlc')
+    },
+    zgjh(){
+        console.log('zgjh')
+    },
+    xtjh(){
+        console.log('xtjh')
     }
   }
 }

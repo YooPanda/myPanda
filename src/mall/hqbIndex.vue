@@ -1,15 +1,31 @@
 <template>
 <div>
-  {{msg}}
+  <van-swipe :autoplay="3000">
+  <van-swipe-item v-for="(image, index) in images" :key="index">
+    <img v-lazy="image" />
+  </van-swipe-item>
+  </van-swipe>
+  <Gridlist :icon-btns="icons"></Gridlist>
 </div>
 </template>
 <script>
-
+import Gridlist from '../components/gridList.vue';
 export default {
   name: 'HqbIndex',
+  components:{Gridlist},
   data () {
     return {
-      msg: 'Welcome to hqb'
+      msg: 'Welcome to hqb',
+      icons:[
+          {name:"收益凭证","src":"../../static/icon/dingtou.png","funC":"sypz"},
+          {name:"银行理财","src":"../../static/icon/xjbqy.png","funC":"yhlc"},
+          {name:"资管计划","src":"../../static/icon/lckt.png","funC":"zgjh"},
+          {name:"信托计划","src":"../../static/icon/wdgz.png","funC":"xtjh"},
+      ],
+      images: [
+        '../../static/adv/moyijian.png',
+        '../../static/adv/banner2.jpg'
+      ]
     }
   }
 }

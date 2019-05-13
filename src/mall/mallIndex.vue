@@ -14,7 +14,7 @@
             </div>
     </div>
   </div>
-  <Gridlist :iconbtns="icons"></Gridlist>
+  <Gridlist :icon-btns="icons"></Gridlist>
 </div>
 </template>
 <script>
@@ -29,9 +29,9 @@ export default {
       total_asset:'0',
       icons:[
           {name:"定投精选","src":"../../static/icon/dingtou.png","funC":"dtjx"},
-          {name:"我的理财","src":"../../static/icon/xjbqy.png"},
-          {name:"产品查询","src":"../../static/icon/lckt.png"},
-          {name:"我的关注","src":"../../static/icon/wdgz.png"},
+          {name:"我的理财","src":"../../static/icon/xjbqy.png","funC":"wdlc"},
+          {name:"产品查询","src":"../../static/icon/lckt.png","funC":"cpcx"},
+          {name:"我的关注","src":"../../static/icon/wdgz.png","funC":"wdgz"},
       ]
     }
   },
@@ -53,13 +53,8 @@ export default {
        .catch((error) => {
          console.log(error);
         });
-      },
-      goto(methodsWords) {
-         thismethodsWords
-      },
-      dtjx(){
-        console.log('success')
       }
+      
 
       }
   }
