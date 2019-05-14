@@ -58,13 +58,15 @@ export default {
 <style scoped>
 .li_index{
     display:block;
-    white-space:nowrap;
+    
     background-color: #ffffff;
     overflow:auto;
+    margin-top: 10px;
 }
 .line_li{
     display:inline-block;
     width: 25%;
+    margin-bottom: 15px;
     height: 50px;
     text-align: center;
 }

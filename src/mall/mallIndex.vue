@@ -15,6 +15,7 @@
     </div>
   </div>
   <Gridlist :icon-btns="icons"></Gridlist>
+  <div style="height:10px;background:#F5F5F5;"></div>
 </div>
 </template>
 <script>
